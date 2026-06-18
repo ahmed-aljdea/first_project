@@ -134,6 +134,22 @@ right: 5px;
     border-bottom: 1px solid #ddd;
 }
 /*! end header */
+/** start components */
+.special-heading{
+color: #ebeced;
+font-size: 100px;
+text-align: center;
+font-weight: 800;
+letter-spacing: -3px;
+margin: 0;  
+}
+.special-heading + p {
+margin:-30px 0 0;
+font-size: 20px;
+text-align: center;
+color: #777;
+}
+/** end components */
 /** start landing section */
 .landing{
     text-transform: capitalize;
@@ -192,3 +208,9 @@ margin: 30px 0;
     font-size: 17px;
 }
 /** end Features */
+/** start Services */
+.services{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+/** end Services */
