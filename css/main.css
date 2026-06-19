@@ -2,6 +2,8 @@
 :root{
     --main-color: #10ceb7;
     --second-color: #2c4755;
+    --second-padding: 60px;
+    --second-background: #f6f6f6;
 }
 /** end variables */
 /** start global rules */
@@ -182,9 +184,9 @@ color: var(--main-color);
 
 /** Start Features */
 .features{
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: #f6f6f6;
+    padding-top: var(--second-padding);
+    padding-bottom: var(--second-padding);
+    background-color: var(--second-background);
 }
 .features .container{
     display:grid;
@@ -211,8 +213,8 @@ margin: 30px 0;
 /** end Features */
 /** start Services */
 .services{
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: var(--second-padding);
+    padding-bottom: var(--second-padding);
 }
 .services .services-content {
     display: grid;
@@ -268,3 +270,34 @@ margin: 30px 0;
     }
 }
 /** end Services */
+
+/* *start Portfolio */
+.portfolio {
+    padding-top: var(--second-padding);
+    padding-bottom: var(--second-padding);
+    background-color: var(--second-background);
+}
+.portfolio .portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 80px;
+}
+.portfolio .card{
+    background-color:white;
+}
+.portfolio  .portfolio-content .card  img{
+    max-width: 100%;
+}
+.portfolio  .portfolio-content .card  .info{
+    padding: 20px;
+}
+.portfolio  .portfolio-content .card  .info h3{
+    margin: 0 ;
+}
+.portfolio  .portfolio-content .card  .info p{
+    color: #777;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+/* * end Portfolio */
